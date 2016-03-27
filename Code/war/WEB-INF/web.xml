@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+
+	<servlet>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+		<init-param>
+			<param-name>services</param-name>
+			<param-value />
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<url-pattern>/_ah/spi/*</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Uploadfiles</servlet-name>
+		<servlet-class>com.Uploadfiles</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Uploadfiles</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Uploadfileswom</servlet-name>
+		<servlet-class>com.Uploadfileswom</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Uploadfileswom</servlet-name>
+		<url-pattern>/uploadfileswom</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+<servlet>
+		<servlet-name>Searchfilewom</servlet-name>
+		<servlet-class>com.Searchfilewom</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Searchfilewom</servlet-name>
+		<url-pattern>/searchfilewom</url-pattern>
+	</servlet-mapping>
+	
+
+
+	<servlet>
+		<servlet-name>ShowAll</servlet-name>
+		<servlet-class>com.ShowAll</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShowAll</servlet-name>
+		<url-pattern>/showall</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>Searchfile</servlet-name>
+		<servlet-class>com.Searchfile</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Searchfile</servlet-name>
+		<url-pattern>/searchfile</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Searchregexp</servlet-name>
+		<servlet-class>com.Searchregexp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Searchregexp</servlet-name>
+		<url-pattern>/searchregexp</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Filelistregexp</servlet-name>
+		<servlet-class>com.Filelistregexp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Filelistregexp</servlet-name>
+		<url-pattern>/filelistregexp</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Displaycontents</servlet-name>
+		<servlet-class>com.Displaycontents</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Displaycontents</servlet-name>
+		<url-pattern>/displaycontents</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>com.Delete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>Deletewom</servlet-name>
+		<servlet-class>com.Deletewom</servlet-class>
+	</servlet>
+
+
+
+	<servlet-mapping>
+		<servlet-name>Deletewom</servlet-name>
+		<url-pattern>/deletewom</url-pattern>
+	</servlet-mapping>
+
+
+	  <servlet>
+    <servlet-name>RemoveAllCache</servlet-name>
+    <servlet-class>com.RemoveAllCache</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>RemoveAllCache</servlet-name>
+    <url-pattern>/removeallcache</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>RemoveAll</servlet-name>
+    <servlet-class>com.RemoveAll</servlet-class>
+  </servlet>
+ <servlet-mapping>
+    <servlet-name>RemoveAll</servlet-name>
+    <url-pattern>/removeall</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+    <servlet-name>SizeStorage</servlet-name>
+    <servlet-class>com.SizeStorage</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>SizeStorage</servlet-name>
+    <url-pattern>/sizestorage</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
